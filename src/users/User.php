@@ -49,11 +49,11 @@ class User
         insert into users values(:userID, :userMail, :password)
         ");
 
-        $sql->bindParam(":userID", $userID);
+        $sql->bindParam(":userID", $this->userID);
         $sql->bindParam(":userMail", $this->userMail);
         $sql->bindParam(":password", $passwordHash);
         $sql->execute([
-            "userID"=>$userID,
+            "userID"=>$this->userID,
             "userMail"=>$this->usermail,
             "password"=>$passwordHash,
         ]);

@@ -43,7 +43,7 @@
 <h1>Create kamer 1</h1>
 <form action="createKamer2.php" method="post">
     <label for="kamernummervak">kamernummer</label>
-    <input type="text" id="kamernummervak" name="kamernummer"><br/>
+    <input type="text" id="kamernummervak" name="kamernummervak"><br/>
     <label for="kameraantalbeddenvak">Aantal bedden kamer</label>
     <input type="text" id="kameraantalbeddenvak" name="kameraantalbeddenvak"><br/>
     <label for="kamerprijsvak">Kamerprijs</label>

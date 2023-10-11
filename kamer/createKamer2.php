@@ -45,12 +45,12 @@
 <?php
 require "../src/kamer/Kamer.php";
 
-$kamerid = NULL;
-$kamernummer=$_POST["klantnaamvak"];
-$kameraantalbedden=$_POST["kameraantalbeddenvak"];
-$kamerprijs=$_POST["kamerprijsvak"];
+$kamerId = NULL;
+$kamerNummer=$_POST["kamernummervak"];
+$kamerAantalBedden=$_POST["kameraantalbeddenvak"];
+$kamerPrijs=$_POST["kamerprijsvak"];
 
-$kamer1 = new Kamer($kamerid, $kamernummer, $kameraantalbedden, $kamerprijs);
+$kamer1 = new Kamer($kamerId, $kamerNummer, $kamerAantalBedden, $kamerPrijs);
 $kamer1->createKamer();
 ?>
 </body>
