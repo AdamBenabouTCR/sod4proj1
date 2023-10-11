@@ -48,12 +48,12 @@
 </p>
 
 <?php
-require "../src/kamer/Kamer.php";
+require "../src/kamerhuren/Kamerhuur.php";
 
-$kamerid=$_POST["kameridvak"];
+$huurid=$_POST["huuridvak"];
 
-$kamer1 = new Kamer($kamerid);
-$kamer1->deleteKamer();
+$kamerhuur1 = new kamerHuur($huurid);
+$kamerhuur1->deleteKamerHuur();
 ?>
 </body>
 </html>

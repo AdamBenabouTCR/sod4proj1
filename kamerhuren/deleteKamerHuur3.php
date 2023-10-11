@@ -44,12 +44,12 @@
 <p>Verwijder een kamer</p>
 
 <?php
-require "../src/kamer/Kamer.php";
-$kamerid = $_POST["kameridvak"];
+require "../src/kamerhuren/Kamerhuur.php";
+$huurid = $_POST["huuridvak"];
 
 
-$kamer1 = new Kamer($kamerid);
-$kamer1->deleteKamer2();
+$kamerhuur1 = new kamerHuur($huurid);
+$kamerhuur1->deleteKamerHuur2();
 ?>
 </body>
 </html>

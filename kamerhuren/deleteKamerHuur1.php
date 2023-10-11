@@ -42,10 +42,10 @@
 <body>
 <h1>Delete kamer 1</h1>
 <p>Hier kunt u kamers verwijderen</p>
-<form action="deleteKamer2.php" method="post">
+<form action="deleteKamerHuur2.php" method="post">
     Welke kamerID wilt u verwijderen?
 
-    <input type="text" name="kameridvak"> <br>
+    <input type="text" name="kamerhuuridvak"> <br>
     <input div class="button" type = "submit">
 
 </form>

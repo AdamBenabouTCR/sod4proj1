@@ -60,7 +60,7 @@
 welkom<br>
 <body>
 <div class="button"><a href="klant/klantmenu.php">Klanten</a><br></div>
-<div class="button"><a href="kamer/kamermenu.php">Producten</a><br></div>
-<div class="button"><a href="kamerhuren/kamerhurenmenu.php">Users</a><br></div>
+<div class="button"><a href="kamer/kamermenu.php">Kamers</a><br></div>
+<div class="button"><a href="kamerhuren/kamerHuurmenu.php">Huren</a><br></div>
 </body>
 </html>

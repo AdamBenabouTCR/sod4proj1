@@ -42,20 +42,20 @@
 <body>
 
 <h1>Kamer update</h1>
-<p>Dit formulier is om kamergegevens te wijzigen</p>
+<p>Dit formulier is om huurgegevens te wijzigen</p>
 
 <?php
 
-require "../src/kamer/Kamer.php";
-$kamerid = $_POST ["kameridvak"];
-$kammernummer = $_POST ["kamernummervak"];
-$kameraantalbedden = $_POST ["kammeraantalbeddenvak"];
-$kamerprijs= $_POST ["kamerprijsvak"];
+require "../src/kamerhuren/Kamerhuur.php";
+$huurid = $_POST ["huuridvak"];
+$aantalnachten = $_POST ["aantalbeddenvak"];
+$totaalprijs = $_POST ["totaalprijsvak"];
+$kamerid= $_POST ["kameridvak"];
 
 
 
-$kamer1 = new Kamer($kamerid, $kamernummer, $kameraantalbedden, $kamerprijs);
-$kamer1->updateKamer2();
+$kamerhuur1 = new kamerHuur($huurid, $aantalnachten, $totaalprijs, $kamerid);
+$kamerhuur1->updateKamerHuur2();
 ?>
 </body>
 </html>
