@@ -138,7 +138,7 @@ class Kamer
                                update kamers set kamerID = :kamerID,
                                                   kamerNummer = :kamerNummer,
                                                   kamerAantalBedden = :kamerAantalBedden,
-                                                  kamerPrijs = :kamerPrijs,
+                                                  kamerPrijs = :kamerPrijs
                                                   where   kamerID = :kamerID 
                                ");
         $sql->execute([
@@ -187,7 +187,7 @@ class Kamer
 
         echo "<form action='../kamer/deleteKamer3.php' method ='post'>";
 //waarde null als dit niet gecheckt word
-        echo "<input type='hidden' name='artidvak' value='".$kamerID."'>";
+        echo "<input type='hidden' name='kameridvak' value='".$kamerID."'>";
         echo "Kamer verwijderen. <br/>";
         echo "<input type='checkbox' name='verwijdervak' value='1'>";
         echo "<input div class = submit type='submit'>";
@@ -221,7 +221,7 @@ class Kamer
     {
         //haalt gegevens op die ingevoerd waren op searchArtikelFormulier1 en searchKlantFormulier2
         $kamerID = $this->get_kamerId();
-        require "../../src/klant/oopconnect.php";
+        require "../src/klant/oopconnect.php";
 
         $sql = $conn->prepare("
                                      select * from  kamers
@@ -233,11 +233,11 @@ class Kamer
         foreach($sql as $kamer)
         {
             echo $kamer["kamerID"] . "<br/>";
-            $this->kamer=$kamer["kamerNummer"];
-            $this->kamer=$kamer["kamerAantalBedden"];
-            $this->kamer=$kamer["kamerPrijs"];
+            $this->kamerNummer=$kamer["kamerNummer"];
+            $this->kamerAantalBedden=$kamer["kamerAantalBedden"];
+            $this->kamerPrijs=$kamer["kamerPrijs"];
         }
-        echo "<a href='../artikelen/artikelmenu.php'> terug naar het menu </a>";
+        echo "<a href='../kamer/kamermenu.php'> terug naar het menu </a>";
     }
 
     public function set_kamerAantalBedden($kamerAantalBedden)

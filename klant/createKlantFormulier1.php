@@ -46,10 +46,10 @@
     <input type="text" id="klantnaamvak" name="klantnaamvak"><br/>
     <label for="klantemailvak">Klantmail</label>
     <input type="text" id="klantemailvak" name="klantemailvak"><br/>
-    <label for="klantpostcodevak">Klantpostcode</label>
-    <input type="text" id="klantpostcodevak" name="klantpostcodevak"><br/>
     <label for="klantadresvak">Klantadres</label>
     <input type="text" id="klantadresvak" name="klantadresvak"><br/>
+    <label for="klantpostcodevak">Klantpostcode</label>
+    <input type="text" id="klantpostcodevak" name="klantpostcodevak"><br/>
     <input type="submit">
 </form>
 </body>

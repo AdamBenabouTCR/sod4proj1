@@ -46,10 +46,10 @@
 
 require "../src/kamer/Kamer.php";
 
-$kamerid = $_POST["kameridvak"];
+$kamerId = $_POST["kameridvak"];
 
 //gegevens worden verwijst naar de object Kamer in de functie searchKamer
-$kamer1 = new Kamer($kamerid);
+$kamer1 = new Kamer($kamerId);
 $kamer1->searchKamer();
 $kamer1->afdrukken();
 ?>

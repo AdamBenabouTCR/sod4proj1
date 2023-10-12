@@ -50,9 +50,9 @@
 <?php
 require "../src/kamer/Kamer.php";
 
-$kamerid=$_POST["kameridvak"];
+$kamerId=$_POST["kameridvak"];
 
-$kamer1 = new Kamer($kamerid);
+$kamer1 = new Kamer($kamerId);
 $kamer1->deleteKamer();
 ?>
 </body>

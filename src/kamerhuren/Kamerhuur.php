@@ -49,7 +49,32 @@ class kamerHuur
 
     public function createKamerHuur()
     {
+        require "../src/klant/oopconnect.php";
 
+        $huurID = NULL;
+        $aantalNachten = $this->get_aantalnachten();
+        $totaalPrijs = $this->get_totaalprijs();
+        $kamerID = $this->get_kamerId();
+        $klantID = $this->get_klantId();
+
+        $sql = $conn->prepare("insert into kamerhuren values(:huurID, :aantalNachten, :totaalPrijs, :huurID, :klantID)");
+
+        $sql->bindParam(":huurID", $huurID);
+        $sql->bindParam(":aantalNachten", $aantalNachten);
+        $sql->bindParam(":totaalPrijs", $totaalPrijs);
+        $sql->bindParam(":kamerID", $kamerID);
+        $sql->bindParam(":klantID", $klantID);
+
+        $sql->execute([
+            "huurID"=>$huurID,
+            "aantalNachten"=>$aantalNachten,
+            "totaalPrijs"=>$totaalPrijs,
+            "kamerID"=>$kamerID,
+            "klantID"=>$klantID
+        ]);
+
+        echo "Huur toegevoegd";
+        echo "<a href='../kamerhuren/kamerHuurmenu.php'>Terug naar het menu. <a/>";
     }
 
     public function readKamerHuur()

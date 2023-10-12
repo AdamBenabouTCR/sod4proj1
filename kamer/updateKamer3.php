@@ -47,14 +47,14 @@
 <?php
 
 require "../src/kamer/Kamer.php";
-$kamerid = $_POST ["kameridvak"];
-$kammernummer = $_POST ["kamernummervak"];
-$kameraantalbedden = $_POST ["kammeraantalbeddenvak"];
-$kamerprijs= $_POST ["kamerprijsvak"];
+$kamerId = $_POST ["kameridvak"];
+$kamerNummer = $_POST ["kamernummervak"];
+$kamerAantalBedden = $_POST ["kameraantalbeddenvak"];
+$kamerPrijs= $_POST ["kamerprijsvak"];
 
 
 
-$kamer1 = new Kamer($kamerid, $kamernummer, $kameraantalbedden, $kamerprijs);
+$kamer1 = new Kamer($kamerId, $kamerNummer, $kamerAantalBedden, $kamerPrijs);
 $kamer1->updateKamer2();
 ?>
 </body>

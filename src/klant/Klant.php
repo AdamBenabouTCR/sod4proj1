@@ -48,7 +48,7 @@ class Klant extends Persoon
         $klantAdres = $this->get_klantadres();
         $klantPostcode = $this->get_klantpostcode();
 
-        $sql = $conn->prepare("insert into klant values(:klantID, :klantNaam, :klantMail, :klantAdres,:klantPostcode)");
+        $sql = $conn->prepare("insert into klanten values(:klantID, :klantNaam, :klantMail, :klantAdres,:klantPostcode)");
 
         $sql->bindParam(":klantID", $klantID);
         $sql->bindParam(":klantNaam", $klantNaam);
@@ -77,7 +77,7 @@ class Klant extends Persoon
                                                 klantMail,
                                                 klantAdres,
                                                 klantPostcode
-                                         from   klant");
+                                         from   klanten");
 
         $klanten->execute();
         echo"<table>";
@@ -104,7 +104,7 @@ class Klant extends Persoon
        klantMail,
        klantAdres,
        klantPostcode
-    from   klant
+    from   klanten
     where klantID = :klantID
     ");
         $klantID = $this->get_klantid();
@@ -154,7 +154,7 @@ class Klant extends Persoon
         $klantPostcode = $this->get_klantpostcode();
 
         $sql = $conn->prepare("
-                               update klant set klantID = :klantID,
+                               update klanten set klantID = :klantID,
                                                   klantNaam = :klantNaam,
                                                   klantMail = :klantMail,
                                                   klantAdres = :klantAdres,
@@ -183,7 +183,7 @@ class Klant extends Persoon
        klantMail,
        klantAdres,
        klantPostcode
-    from   klant
+    from   klanten
     where klantID = :klantID
     ");
         $klantID = $this->get_klantid();
@@ -226,7 +226,7 @@ class Klant extends Persoon
         if ($verwijder)
         {
             require "oopconnect.php";
-            $sql = $conn->prepare("delete from klant 
+            $sql = $conn->prepare("delete from klanten 
         where klantID = :klantID");
 
             $sql->execute(["klantID" =>$klantID]);
@@ -248,7 +248,7 @@ class Klant extends Persoon
         require "oopconnect.php";
 
         $sql = $conn->prepare("
-                                   select * from  klant
+                                   select * from  klanten
                                    where      klantID = :klantID
                                    ");
         $sql->bindParam("klantID", $klantID);
@@ -260,7 +260,7 @@ class Klant extends Persoon
             $this->klantnaam=$klant["klantNaam"];
             $this->klantemail=$klant["klantMail"];
             $this->klantadres=$klant["klantAdres"];
-            $this->klantpostcode=$klant["klantPostcode"];
+            $this->klantpostcode=$klant["KlantPostcode"];
         }
 
         echo "<a href='../klant/klantmenu.php'> terug naar het menu </a>" . "<br/>";
