@@ -219,7 +219,7 @@ class Kamer
 
     public function searchKamer()
     {
-        //haalt gegevens op die ingevoerd waren op searchArtikelFormulier1 en searchKlantFormulier2
+        //haalt gegevens op die ingevoerd waren op searchKamerFormulier1 en searchKlantFormulier2
         $kamerID = $this->get_kamerId();
         require "../src/klant/oopconnect.php";
 

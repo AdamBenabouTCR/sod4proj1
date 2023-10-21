@@ -45,7 +45,7 @@
 <form action="deleteKamerHuur2.php" method="post">
     Welke kamerID wilt u verwijderen?
 
-    <input type="text" name="kamerhuuridvak"> <br>
+    <input type="text" name="huuridvak"> <br>
     <input div class="button" type = "submit">
 
 </form>

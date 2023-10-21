@@ -45,7 +45,6 @@
 
 <?php
 require "../src/kamer/Kamer.php";
-echo "<pre>".print_r($_POST, true)."</pre>";
 $kamerId = $_POST["kameridvak"];
 
 
