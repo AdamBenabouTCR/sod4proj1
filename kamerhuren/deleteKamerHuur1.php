@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>delete kamer 1</title>
+    <title>delete kamerhuur 1</title>
     <style>
         ul {
             list-style-type: none;
@@ -40,10 +40,10 @@
     </ul>
 </header>
 <body>
-<h1>Delete kamer 1</h1>
-<p>Hier kunt u kamers verwijderen</p>
+<h1>Delete kamerhuur 1</h1>
+<p>Hier kunt u kamerhuren verwijderen</p>
 <form action="deleteKamerHuur2.php" method="post">
-    Welke kamerID wilt u verwijderen?
+    Welke huurID wilt u verwijderen?
 
     <input type="text" name="huuridvak"> <br>
     <input div class="button" type = "submit">

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>search kamer 1</title>
+    <title>search kamerhuur 1</title>
     <style>
         ul {
             list-style-type: none;

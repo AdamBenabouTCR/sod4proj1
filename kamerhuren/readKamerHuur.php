@@ -43,10 +43,10 @@
 <h1>Alle kamerhuren</h1>
 
 <?php
-
 require "../src/kamerhuren/Kamerhuur.php";
-$kamerhuur1 = new KamerHuur();
-$kamerhuur1->readKamerHuur();
+
+$kamerHuur1 = new kamerHuur();
+$kamerHuur1->readKamerHuur();
 ?>
 </body>
 </html>

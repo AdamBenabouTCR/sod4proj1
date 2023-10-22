@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>delete kamer 2</title>
+    <title>delete kamerhuur 2</title>
     <style>
         ul {
             list-style-type: none;
@@ -40,11 +40,11 @@
     </ul>
 </header>
 <body>
-<h1>Klant verwijderen</h1>
-<p>Hier kunt u een kamer verwijderen</p>
-<h1>Delete klant 2</h1>
+<h1>Kamerhuur verwijderen</h1>
+<p>Hier kunt u een kamerhuur verwijderen</p>
+<h1>Delete kamerhuur 2</h1>
 <p>
-    Hier kunt u een kamer verwijderen
+    Hier kunt u een huur verwijderen
 </p>
 
 <?php

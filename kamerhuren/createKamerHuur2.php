@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>create kamer 2</title>
+    <title>create kamerhuur 2</title>
     <style>
         ul {
             list-style-type: none;
@@ -40,19 +40,19 @@
     </ul>
 </header>
 <body>
-<h1>Create kamer 2</h1>
+<h1>Create kamerhuur 2</h1>
 
 <?php
 require "../src/kamerhuren/Kamerhuur.php";
 
-$huurid = NULL;
-$nachten=$_POST["aantalnachtenvak"];
-$totaalprijs=$_POST["totaalprijsvak"];
-$kamerid = NULL;
-$klantid = NULL;
+$huurId = NULL;
+$aantalNachten=$_POST["aantalnachtenvak"];
+$totaalPrijs=$_POST["totaalprijsvak"];
+$kamerId = $_POST["kameridvak"];
+$klantId = $_POST["klantidvak"];
 
-$kamerhuur1 = new KamerHuur($huurid, $nachten, $totaalprijs, $kamerid, $klantid);
-$kamerhuur1->createKamerHuur();
+$kamerHuur1 = new kamerHuur($huurId, $aantalNachten, $totaalPrijs, $kamerId, $klantId);
+$kamerHuur1->createKamerHuur();
 ?>
 </body>
 </html>

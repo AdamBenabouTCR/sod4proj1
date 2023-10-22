@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>delete Kamer 3</title>
+    <title>delete Kamerhuur 3</title>
     <style>
         ul {
             list-style-type: none;
@@ -40,8 +40,8 @@
     </ul>
 </header>
 <body>
-<h1>delete Kamer 3</h1>
-<p>Verwijder een kamer</p>
+<h1>delete Kamerhuur 3</h1>
+<p>Verwijder een huur</p>
 
 <?php
 require "../src/kamerhuren/Kamerhuur.php";

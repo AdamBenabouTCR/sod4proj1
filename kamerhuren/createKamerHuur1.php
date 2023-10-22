@@ -46,6 +46,10 @@
     <input type="text" id="aantalnachtenvak" name="aantalnachtenvak"><br/>
     <label for="totaalprijsvak">Totaalprijs</label>
     <input type="text" id="totaalprijsvak" name="totaalprijsvak"><br/>
+    <label for="kameridvak">Kamer ID</label>
+    <input type="text" id="kameridvak" name="kameridvak"><br/>
+    <label for="klantidvak">Klant ID</label>
+    <input type="text" id="klantidvak" name="klantidvak"><br/>
     <input type="submit">
 </form>
 </body>

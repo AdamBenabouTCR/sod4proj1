@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>update kamer 1</title>
+    <title>update kamerhuur 1</title>
     <style>
         ul {
             list-style-type: none;
@@ -40,12 +40,12 @@
     </ul>
 </header>
 <body>
-<h1>Update kamer 1</h1>
-<p>Hier kunt u kamers updaten</p>
-<form action="updateKamer2.php" method="post">
-    Welke kamerID wilt u toepassen?
+<h1>Update kamerhuur 1</h1>
+<p>Hier kunt u kamerhuren updaten</p>
+<form action="updateKamerHuur2.php" method="post">
+    Welke huurID wilt u toepassen?
 
-    <input type="text" name="kameridvak"> <br>
+    <input type="text" name="huuridvak"> <br>
     <input div class="button" type = "submit">
 
 </form>

@@ -46,10 +46,10 @@
 
 require "../src/kamerhuren/Kamerhuur.php";
 
-$huurid = $_POST["huuridvak"];
+$huurId = $_POST["huuridvak"];
 
 //gegevens worden verwijst naar de object Kamerhuur in de functie searchKamer
-$kamerhuur1 = new kamerHuur($kamerid);
+$kamerhuur1 = new kamerHuur($huurId);
 $kamerhuur1->searchKamerHuur();
 $kamerhuur1->afdrukken();
 ?>

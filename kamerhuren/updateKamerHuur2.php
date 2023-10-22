@@ -50,10 +50,11 @@
 <?php
 require "../src/kamerhuren/Kamerhuur.php";
 
-$huurid=$_POST["huuridvak"];
+$huurId=$_POST["huuridvak"];
 
-$kamerhuur1 = new kamerHuur($huurid);
-$kamerhuur1->updateKamerHuur();
+
+$kamerHuur1 = new kamerHuur($huurId);
+$kamerHuur1->updateKamerHuur();
 ?>
 </body>
 </html>

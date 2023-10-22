@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Kamermenu</title>
+    <title>Huurmenu</title>
     <style>
         .button {
             font-family: "Roboto", sans-serif;

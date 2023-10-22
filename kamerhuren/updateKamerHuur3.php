@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Update kamer 3</title>
+    <title>Update kamerhuur 3</title>
     <style>
         ul {
             list-style-type: none;
@@ -41,21 +41,22 @@
 </header>
 <body>
 
-<h1>Kamer update</h1>
+<h1>Kamerhuur update</h1>
 <p>Dit formulier is om huurgegevens te wijzigen</p>
 
 <?php
 
 require "../src/kamerhuren/Kamerhuur.php";
-$huurid = $_POST ["huuridvak"];
-$aantalnachten = $_POST ["aantalbeddenvak"];
-$totaalprijs = $_POST ["totaalprijsvak"];
-$kamerid= $_POST ["kameridvak"];
+$huurId = $_POST ["huuridvak"];
+$aantalNachten = $_POST ["aantalnachtenvak"];
+$totaalPrijs = $_POST ["totaalprijsvak"];
+$kamerId= $_POST ["kameridvak"];
+$klantId= $_POST ["klantidvak"];
 
 
 
-$kamerhuur1 = new kamerHuur($huurid, $aantalnachten, $totaalprijs, $kamerid);
-$kamerhuur1->updateKamerHuur2();
+$kamerHuur1 = new kamerHuur($huurId, $aantalNachten, $totaalPrijs, $kamerId, $klantId);
+$kamerHuur1->updateKamerHuur2();
 ?>
 </body>
 </html>
